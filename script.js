@@ -4,7 +4,7 @@ $(document).ready(function() {
   var days = $("#days");
 
   $("#search-button").click(function() {
-    var citySearch = $("#search").val();
+    var citySearch = $("#search").val().trim();
     var buttonElement = $("<button/>", {
       text: citySearch,
       class: "btn btn-outline-secondary btn-lg",
@@ -14,4 +14,5 @@ $(document).ready(function() {
     });
     history.append(buttonElement);
   });
+
 });
